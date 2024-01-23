@@ -1,0 +1,7 @@
+# values.yaml
+
+job:
+  name: hello-world
+  image:
+    repository: harbor.st0217.cgw-hpe.net/library/gl-edge-master-repo:run-job
+  command: ["python3", "app.py"]
