@@ -3,5 +3,5 @@
 job:
   name: hello-world
   image:
-    repository: harbor.st0780.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
+    repository: harbor.st0788.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
   command: ["python3", "app.py"]
