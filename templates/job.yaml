@@ -14,5 +14,5 @@ spec:
         command: ["python", "app.py"] 
         env:
         - name: vaultEcaasVcenterLicenseKey
-          value: <path:gateway-config-v2/data/secrets#vaultEcaasVcenterLicenseKey>
+          value: <path:st0259/edge-config/data/secrets#vCenterIp>
       restartPolicy: Never
