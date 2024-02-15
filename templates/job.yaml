@@ -13,6 +13,10 @@ spec:
         image: {{ .Values.job.image.repository }}
         command: ["python", "app.py"] 
         env:
-        - name: vaultEcaasVcenterLicenseKey
+        - name: VCENTERIP
           value: <path:ST0198/edge-config/data/secrets#vCenterIp>
+        - name: SERVER1ILOUSERNAME
+          value: <path:ST0198/edge-config/data/secrets#server1ILOUsername>
+        - name: SERVER1ILOPASSWORD
+          value: <path:ST0198/edge-config/data/secrets#server1ILOPassword>
       restartPolicy: Never
