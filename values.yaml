@@ -2,7 +2,9 @@
 
 job:
   name: ZTP-Update
-  store_id: ST0198
   image:
     repository: harbor.st0198.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
   command: ["python3", "app.py"]
+
+store_info:
+  store_id: ST0198

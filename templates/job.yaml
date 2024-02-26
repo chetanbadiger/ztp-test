@@ -14,45 +14,45 @@ spec:
         command: ["python", "app.py"] 
         env:
         - name: domainname
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#domainname>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#domainname>
         - name: vCenterClusterName
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#vCenterClusterName>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#vCenterClusterName>
         - name: vCenterIp
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#vCenterIp>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#vCenterIp>
         - name: vCenterDCName
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#vCenterDCName>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#vCenterDCName>
         - name: vCenterUsername
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#vCenterUsername>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#vCenterUsername>
         - name: vCenterPassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#vCenterPassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#vCenterPassword>
         - name: pulpusername
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#pulpusername>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#pulpusername>
         - name: pulppassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#pulppassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#pulppassword>
 
         - name: server1ILOUsername
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1ILOUsername>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1ILOUsername>
         - name: server1ILOPassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1ILOPassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1ILOPassword>
         - name: server1LocalDataStore
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1LocalDataStore>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1LocalDataStore>
         - name: server1MgmtIP
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1MgmtIP>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1MgmtIP>
         - name: server1OsUsername
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1OsUsername>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsUsername>
         - name: server1OsPassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server1OsPassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsPassword>
 
         - name: server2ILOUsername
-          value: path:{{ .Values.job.name }}/edge-config/data/secrets#server2ILOUsername>
+          value: path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2ILOUsername>
         - name: server2ILOPassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server2ILOPassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2ILOPassword>
         - name: server2LocalDataStore
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server2LocalDataStore>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2LocalDataStore>
         - name: server2MgmtIP
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server2MgmtIP>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2MgmtIP>
         - name: server2OsUsername
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server2OsUsername>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsUsername>
         - name: server2OsPassword
-          value: <path:{{ .Values.job.name }}/edge-config/data/secrets#server2OsPassword>
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsPassword>
       restartPolicy: Never
