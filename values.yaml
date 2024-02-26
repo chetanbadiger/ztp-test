@@ -1,7 +1,7 @@
 # values.yaml
 
 job:
-  name: ZTP-Update
+  name: ztp-update-job
   image:
     repository: harbor.st0198.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
   command: ["python3", "app.py"]
