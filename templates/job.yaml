@@ -13,10 +13,46 @@ spec:
         image: {{ .Values.job.image.repository }}
         command: ["python", "app.py"] 
         env:
-        - name: VCENTERIP
+        - name: domainname
+          value: <path:ST0198/edge-config/data/secrets#domainname>
+        - name: vCenterClusterName
+          value: <path:ST0198/edge-config/data/secrets#vCenterClusterName>
+        - name: vCenterIp
           value: <path:ST0198/edge-config/data/secrets#vCenterIp>
-        - name: SERVER1ILOUSERNAME
+        - name: vCenterDCName
+          value: <path:ST0198/edge-config/data/secrets#vCenterDCName>
+        - name: vCenterUsername
+          value: <path:ST0198/edge-config/data/secrets#vCenterUsername>
+        - name: vCenterPassword
+          value: <path:ST0198/edge-config/data/secrets#vCenterPassword>
+        - name: pulpusername
+          value: <path:ST0198/edge-config/data/secrets#pulpusername>
+        - name: pulppassword
+          value: <path:ST0198/edge-config/data/secrets#pulppassword>
+
+        - name: server1ILOUsername
           value: <path:ST0198/edge-config/data/secrets#server1ILOUsername>
-        - name: SERVER1ILOPASSWORD
+        - name: server1ILOPassword
           value: <path:ST0198/edge-config/data/secrets#server1ILOPassword>
+        - name: server1LocalDataStore
+          value: <path:ST0198/edge-config/data/secrets#server1LocalDataStore>
+        - name: server1MgmtIp
+          value: <path:ST0198/edge-config/data/secrets#server1MgmtIp>
+        - name: server1OsUsername
+          value: <path:ST0198/edge-config/data/secrets#server1OsUsername>
+        - name: server1OsPassword
+          value: <path:ST0198/edge-config/data/secrets#server1OsPassword>
+
+        - name: server2ILOUsername
+          value: path:ST0198/edge-config/data/secrets#server2ILOUsername>
+        - name: server2ILOPassword
+          value: <path:ST0198/edge-config/data/secrets#server2ILOPassword>
+        - name: server2LocalDataStore
+          value: <path:ST0198/edge-config/data/secrets#server2LocalDataStore>
+        - name: server2MgmtIp
+          value: <path:ST0198/edge-config/data/secrets#server2MgmtIp>
+        - name: server2OsUsername
+          value: <path:ST0198/edge-config/data/secrets#server2OsUsername>
+        - name: server2OsPassword
+          value: <path:ST0198/edge-config/data/secrets#server2OsPassword>
       restartPolicy: Never
