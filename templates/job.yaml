@@ -36,8 +36,8 @@ spec:
           value: <path:ST0198/edge-config/data/secrets#server1ILOPassword>
         - name: server1LocalDataStore
           value: <path:ST0198/edge-config/data/secrets#server1LocalDataStore>
-        - name: server1MgmtIp
-          value: <path:ST0198/edge-config/data/secrets#server1MgmtIp>
+        - name: server1MgmtIP
+          value: <path:ST0198/edge-config/data/secrets#server1MgmtIP>
         - name: server1OsUsername
           value: <path:ST0198/edge-config/data/secrets#server1OsUsername>
         - name: server1OsPassword
@@ -49,8 +49,8 @@ spec:
           value: <path:ST0198/edge-config/data/secrets#server2ILOPassword>
         - name: server2LocalDataStore
           value: <path:ST0198/edge-config/data/secrets#server2LocalDataStore>
-        - name: server2MgmtIp
-          value: <path:ST0198/edge-config/data/secrets#server2MgmtIp>
+        - name: server2MgmtIP
+          value: <path:ST0198/edge-config/data/secrets#server2MgmtIP>
         - name: server2OsUsername
           value: <path:ST0198/edge-config/data/secrets#server2OsUsername>
         - name: server2OsPassword
