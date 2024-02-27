@@ -3,8 +3,8 @@
 job:
   name: ztp-update-job
   image:
-    repository: harbor.st0198.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
+    repository: harbor.st0788.cgw-hpe.net/library/gl-edge-master-repo:ecr-img
   command: ["python3", "app.py"]
 
 store_info:
-  store_id: ST0198
+  store_id: ST0788
