@@ -3,7 +3,7 @@
 job:
   name: ztp-update-job
   image:
-    repository: harbor.st0788.cgw-hpe.net/library/gl-edge-master-repo:gen-image
+    repository: harbor.st0788.cgw-hpe.net/library/gl-edge-master-repo:gen-image2
   command: ["python3", "orchestrator.py"]
 
 store_info:
