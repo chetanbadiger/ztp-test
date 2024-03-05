@@ -11,7 +11,7 @@ spec:
       containers:
       - name: {{ .Values.job.name }}
         image: {{ .Values.job.image.repository }}
-        command: ["python3", "/app/orchestrator.py", .Values.job.numberOfNodes] 
+        command: ["python3", "/app/orchestrator.py", {{ .Values.job.image.numberOfNodes }}] 
         env:
         - name: domainname
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#domainname>
