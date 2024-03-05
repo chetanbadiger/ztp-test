@@ -3,7 +3,7 @@
 job:
   name: ztp-update-job
   image:
-    repository: 657273346644.dkr.ecr.us-east-1.amazonaws.com/hpe-hcss/ztp-lcm:v0.0.1-register
+    repository: 657273346644.dkr.ecrus-east-1.amazonaws.com/hpe-hcss/ztp-lcm:pr-5-register
   command: ["python3", "/app/orchestrator.py"]
 
 store_info:
