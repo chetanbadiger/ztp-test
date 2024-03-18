@@ -5,7 +5,7 @@ job:
   image:
     repository: 657273346644.dkr.ecr.us-east-1.amazonaws.com/hpe-hcss/ztp-lcm:pr-5-register
   numberOfNodes: "2"
-  opsmode: "esxiupgrade"
+  opsmode: esxiupgrade
 
 store_info:
   store_id: ST0788
