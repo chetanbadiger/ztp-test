@@ -29,6 +29,8 @@ spec:
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#pulpusername>
         - name: pulppassword
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#pulppassword>
+        - name: tenantID
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#tenantId>
 
         - name: server1ILOUsername
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1ILOUsername>
