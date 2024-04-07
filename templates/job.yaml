@@ -42,6 +42,8 @@ spec:
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsUsername>
         - name: server1OsPassword
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsPassword>
+        - name: server1ILOHostname
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1ILOHostname>
 
         - name: server2ILOUsername
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2ILOUsername>
@@ -55,4 +57,6 @@ spec:
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsUsername>
         - name: server2OsPassword
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsPassword>
+        - name: server2ILOHostname
+          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2ILOHostname>
       restartPolicy: Never
