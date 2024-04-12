@@ -2,10 +2,13 @@
 
 job:
   name: ztp-update-job
+  namespace: default
   image:
-    repository: 657273346644.dkr.ecr.us-east-1.amazonaws.com/hpe-hcss/ztp-lcm:pr-6-register
+    repository: 657273346644.dkr.ecr.us-east-1.amazonaws.com/hpe-hcss/ztp-lcm:pr-5-register
   numberOfNodes: "2"
   opsmode: esxiupgrade
+  operation: upgrade # or rollback
+  depot_file: VMware-ESXi-7.0.3-22348816-HPE-703.0.0.11.5.0.6-Oct2023-depot.zip
 
 store_info:
   store_id: ST0788
