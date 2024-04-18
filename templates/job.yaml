@@ -44,7 +44,7 @@ spec:
         - name: server1OsUsername
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsUsername>
         - name: server1OsPassword
-          value: {{ .Values.password}}
+          value: {{ .Values.job.password}}
         - name: server1ILOHostname
           value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1ILOHostname>
         - name: server1FQDN
