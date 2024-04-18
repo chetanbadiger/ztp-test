@@ -9,6 +9,7 @@ job:
   opsmode: esxiupgrade
   operation: upgrade # or rollback
   depot_file: VMware-ESXi-7.0U3p-23307199-depot.zip
+  password: Pr5-F5=-!eHb=VNp+
 
 store_info:
   store_id: ST0788
