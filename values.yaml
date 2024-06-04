@@ -4,7 +4,7 @@ job:
   name: ztp-update-job
   namespace: default
   image:
-    repository: 657273346644.dkr.ecr.us-east-1.amazonaws.com/hpe-hcss/ztp-lcm:pr-6-register
+    repository: harbor.st0001.cgw-hpe.net/library/ztp-lcm:v0.0.2
   numberOfNodes: "2"
   opsmode: esxiupgrade
   operation: upgrade # or rollback
@@ -12,4 +12,4 @@ job:
   password: Pr5-F5=-!eHb=VNp+
 
 store_info:
-  store_id: ST0788
+  store_id: ST0001
