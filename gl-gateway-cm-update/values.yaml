@@ -1,0 +1,16 @@
+job:
+  name: ztp-update-cm
+  namespace: default
+  image:
+    registry: 657273346644.dkr.ecr.us-east-1.amazonaws.com
+    repository: ztp-lcm:v0.0.4
+
+edgeClusterConfig:                               
+  isEdge: false                                   
+  storeId: ""                   # store id for the edge cluster. populated by fleet using automation
+  domain: ""
+  dns: ""
+  rootcacert: "/var/run/secrets/kubernetes.io/serviceaccount/ca.crt"
+
+store_info:
+  store_id: ST0788
