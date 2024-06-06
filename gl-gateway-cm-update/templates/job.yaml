@@ -18,23 +18,23 @@ spec:
           value: {{ .Values.edgeClusterConfig.rootcacert }}
 
         - name: domainname
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#domainname>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#domainname>
 
         - name: server1MgmtIP
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1MgmtIP>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server1MgmtIP>
         - name: server1OsUsername
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsUsername>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server1OsUsername>
         - name: server1OsPassword
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1OsPassword>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server1OsPassword>
         - name: server1FQDN
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server1FQDN>  
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server1FQDN>  
 
         - name: server2MgmtIP
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2MgmtIP>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2MgmtIP>
         - name: server2OsUsername
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsUsername>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2OsUsername>
         - name: server2OsPassword
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2OsPassword>
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2OsPassword>
         - name: server2FQDN
-          value: <path:{{ .Values.store_info.store_id}}/edge-config/data/secrets#server2FQDN>  
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2FQDN>  
       restartPolicy: Never
