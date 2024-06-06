@@ -3,7 +3,8 @@ job:
   namespace: default
   image:
     registry: 657273346644.dkr.ecr.us-east-1.amazonaws.com
-    repository: ztp-lcm:v0.0.4
+    repository: /hpe-hcss/ztp-lcm
+    tag: pr-9-cmupdate
 
 edgeClusterConfig:                               
   isEdge: false                                   

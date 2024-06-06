@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
       - name: {{ .Values.job.name }}
-        image: {{.Values.job.image.registry}}:{{ .Values.job.image.repository }}
+        image: {{.Values.job.image.registry}}/{{ .Values.job.image.repository }}:{{ .Values.job.image.tag }}
         command: ["python3", "/app/main.py"] 
         env:
         - name: rootcacert
