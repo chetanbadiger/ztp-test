@@ -1,6 +1,6 @@
 job:
   name: ztp-update-cm
-  namespace: default
+  namespace: edge
   image:
     registry: 657273346644.dkr.ecr.us-east-1.amazonaws.com
     repository: /hpe-hcss/ztp-lcm
