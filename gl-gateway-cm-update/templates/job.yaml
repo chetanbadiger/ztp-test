@@ -36,5 +36,17 @@ spec:
         - name: server2OsPassword
           value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2OsPassword>
         - name: server2FQDN
-          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2FQDN>  
+          value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#server2FQDN> 
+        
+        volumeMounts:
+          - mountPath: /opt
+            name: certvolume
+            
+       
       restartPolicy: Never
+      volumes:
+        - name: certvolume
+          hostPath:
+            path: /opt/glcg/certificates/certs
+
+
