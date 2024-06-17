@@ -15,7 +15,7 @@ spec:
         command: ["python3", "/app/main.py"] 
         env:
         - name: rootcacert
-          value: <path:{{gateway-config-v2/secrets#vaultGlobalFullChainCertificate}}>
+          value: <path:gateway-config-v2/secrets#vaultGlobalFullChainCertificate>
 
         - name: domainname
           value: <path:{{ .Values.edgeClusterConfig.storeId}}/edge-config/data/secrets#domainname>
