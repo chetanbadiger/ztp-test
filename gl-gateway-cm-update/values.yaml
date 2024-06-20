@@ -2,7 +2,7 @@ job:
   name: ztp-update-cm
   namespace: infra
   image:
-    registry: 657273346644.dkr.ecr.us-east-1.amazonaws.com
+    registry: 657273346644.dkr.ecr.us-west-2.amazonaws.com
     repository: /hpe-hcss/ztp-lcm
     tag: pr-9-cmupdate
 
