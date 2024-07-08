@@ -14,4 +14,4 @@ edgeClusterConfig:
   rootcacert: "/var/run/secrets/kubernetes.io/serviceaccount/ca.crt"
 
 store_info:
-  store_id: ST0788
+  store_id: ST0217
