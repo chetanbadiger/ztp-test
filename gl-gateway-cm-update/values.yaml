@@ -8,7 +8,7 @@ job:
 
 edgeClusterConfig:                               
   isEdge: false                                   
-  storeId: ""                   # store id for the edge cluster. populated by fleet using automation
+  storeId: "ST0217"                   # store id for the edge cluster. populated by fleet using automation
   domain: ""
   dns: ""
   rootcacert: "/var/run/secrets/kubernetes.io/serviceaccount/ca.crt"
