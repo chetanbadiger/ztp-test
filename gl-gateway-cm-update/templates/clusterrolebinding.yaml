@@ -5,7 +5,7 @@ metadata:
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
-  name: cluster-admin
+  name: cm-update-cluster-role
 subjects:
 - kind: ServiceAccount
   name: kubectl-admin-cm-update
